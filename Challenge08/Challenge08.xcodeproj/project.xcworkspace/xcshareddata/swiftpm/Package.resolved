@@ -1,0 +1,15 @@
+{
+  "originHash" : "2a1bbd66e0b36d4d499f464ab8f55f978db41c04dbbf8bc037dd1f978caffdad",
+  "pins" : [
+    {
+      "identity" : "natural-language-model-demodependency",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vini-151/natural-language-model-demoDependency.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "055303f277ed70eb6543f349deb2510bb6f4b94a"
+      }
+    }
+  ],
+  "version" : 3
+}
