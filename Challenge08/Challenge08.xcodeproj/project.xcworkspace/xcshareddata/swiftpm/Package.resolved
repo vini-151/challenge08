@@ -1,13 +1,22 @@
 {
-  "originHash" : "2a1bbd66e0b36d4d499f464ab8f55f978db41c04dbbf8bc037dd1f978caffdad",
+  "originHash" : "05373acf184bc0aca17f61b458a3ae6b67d3c8105e4b451eb8b82441f70f056a",
   "pins" : [
+    {
+      "identity" : "handgesturesclassifier",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/brenomarq/HandGesturesClassifier",
+      "state" : {
+        "revision" : "b3b1ca60af6d6eac45d596c78e701d2accd8f7a4",
+        "version" : "1.0.7"
+      }
+    },
     {
       "identity" : "natural-language-model-demodependency",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vini-151/natural-language-model-demoDependency.git",
       "state" : {
         "branch" : "main",
-        "revision" : "055303f277ed70eb6543f349deb2510bb6f4b94a"
+        "revision" : "bfbe86593301c0ee7407be4211aec0e5dc0d5066"
       }
     }
   ],

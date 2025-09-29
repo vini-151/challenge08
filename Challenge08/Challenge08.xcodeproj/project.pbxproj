@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		393F10EE2E85BA8000103638 /* NLModel in Frameworks */ = {isa = PBXBuildFile; productRef = 393F10ED2E85BA8000103638 /* NLModel */; };
+		39C441862E8B1CFE002B0531 /* HandGesturesClassifier in Frameworks */ = {isa = PBXBuildFile; productRef = 39C441852E8B1CFE002B0531 /* HandGesturesClassifier */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39C441862E8B1CFE002B0531 /* HandGesturesClassifier in Frameworks */,
 				393F10EE2E85BA8000103638 /* NLModel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,6 +73,7 @@
 			name = Challenge08;
 			packageProductDependencies = (
 				393F10ED2E85BA8000103638 /* NLModel */,
+				39C441852E8B1CFE002B0531 /* HandGesturesClassifier */,
 			);
 			productName = Challenge08;
 			productReference = 393F10DE2E85B9E900103638 /* Challenge08.app */;
@@ -102,6 +105,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				393F10EC2E85BA8000103638 /* XCRemoteSwiftPackageReference "natural-language-model-demoDependency" */,
+				39C441842E8B1CFE002B0531 /* XCRemoteSwiftPackageReference "HandGesturesClassifier" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 393F10DF2E85B9E900103638 /* Products */;
@@ -260,11 +264,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42PJP39234;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Esse app usa a camera para detectar gestos da mão do usuário";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -291,11 +298,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42PJP39234;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Esse app usa a camera para detectar gestos da mão do usuário";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -347,6 +357,14 @@
 				kind = branch;
 			};
 		};
+		39C441842E8B1CFE002B0531 /* XCRemoteSwiftPackageReference "HandGesturesClassifier" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/brenomarq/HandGesturesClassifier";
+			requirement = {
+				kind = exactVersion;
+				version = 1.0.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -354,6 +372,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 393F10EC2E85BA8000103638 /* XCRemoteSwiftPackageReference "natural-language-model-demoDependency" */;
 			productName = NLModel;
+		};
+		39C441852E8B1CFE002B0531 /* HandGesturesClassifier */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 39C441842E8B1CFE002B0531 /* XCRemoteSwiftPackageReference "HandGesturesClassifier" */;
+			productName = HandGesturesClassifier;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
